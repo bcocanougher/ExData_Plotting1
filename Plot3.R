@@ -16,7 +16,7 @@ axis(1, at=c(1, 1440, 2880), labels = c("Thu", "Fri", "Sat"))
 lines(sub2, type = "l", col = "red")
 lines(sub3, type = "l", col = "blue" )
 legend("topright", c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'),
-       lty = c(1, 1, 1), lwd = c(1, 1), col = c('black', 'red', 'blue'), cex = 0.5)
+       lty = c(1, 1, 1), lwd = c(1, 1), col = c('black', 'red', 'blue'))
 
 #close the graphics device
 dev.off()  

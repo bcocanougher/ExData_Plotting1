@@ -25,9 +25,14 @@ colnames(PowerDateSet) <- HouseNames
 #Subset global active power column and make it numeric
 GlobalActivePower <- as.numeric(levels(PowerDateSet$Global_active_power))[PowerDateSet$Global_active_power]
 
-#Open the graphics device and plot the data as a histogram
+#Open the graphics device
+#You will need a directory on your desktop named "RCoursera" and
+#a directory in RCoursera called "ExData_Plotting1"
 png(filename = "~/Desktop/RCoursera/ExData_Plotting1/plot1.png", width=480, height=480)
+
+#Plot the data as a histogram
 hist(GlobalActivePower, col = "red", main = "Global Active Power", 
      xlab = "Global Active Power (kilowatts)", breaks = 16, bg = "transparent")
+
 #turn off the graphics device
 dev.off()

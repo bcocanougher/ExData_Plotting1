@@ -1,5 +1,9 @@
-#Plot4.R
-#Add plot 2 and 3 from above as first two plots. Set parameters to mfcol to go vertically
+#This final plot is a combination of two of the previously generated plots with 
+#an additional two more plots.
+
+#First we will add plot 2 and 3 from above as first two plots. Set parameters to 
+#mfcol to go vertically
+
 #open Graphics device
 png(filename = "~/Desktop/RCoursera/ExData_Plotting1/plot4.png", width=480, height=480)
 
